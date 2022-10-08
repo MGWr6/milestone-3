@@ -12,7 +12,7 @@ function NewReview() {
 
   const [ name ] = useState(user.name);
   const [ email ] = useState(user.email);
-  const [ category, setCategory ] = useState('Bathroom');
+  const [ category, setCategory ] = useState('Instructor');
   const [ description, setDescription ] = useState('');
 
   const dispatch = useDispatch()
@@ -68,10 +68,11 @@ function NewReview() {
               value={category}
               onChange={(e) => setCategory(e.target.value)}
             >
-              <option value='Bathroom'>Bathroom</option>
-              <option value='Service'>Service</option>
-              <option value='Safety'>Safety</option>
-              <option value='Hot Food'>Hot Food</option>
+              <option value='Instructo'>Instructor</option>
+              <option value='Course Material'>Course Material</option>
+              <option value='Technical Errors'>Technical Errors</option>
+              <option value='Homework'>Homework</option>
+              <option value='Satisfaction'>Satisfaction</option>
             </select>
           </div>
           <div className='form-group'>

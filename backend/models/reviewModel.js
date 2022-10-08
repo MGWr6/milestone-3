@@ -11,7 +11,7 @@ const reviewSchema = mongoose.Schema(
     category: {
       type: String,
       required: [true, 'Please select a category'],
-      enum: ['Bathroom', 'Service', 'Safety', 'Hot Food'],
+      enum: ['Instructor', 'Course Material', 'Technical Errors', 'Homework', 'Satisfaction'],
     },
     description: {
       type: String,
@@ -19,7 +19,7 @@ const reviewSchema = mongoose.Schema(
     },
     status: {
       type: String,
-      enum: ['new', 'open', 'closed'],
+      enum: ['new', 'viewed'],
       default: 'new',
     },
   },
